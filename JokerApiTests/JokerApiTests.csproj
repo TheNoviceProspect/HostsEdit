@@ -59,7 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JokerLib\JokerApi.csproj">
+    <ProjectReference Include="..\JokerApi\JokerApi.csproj">
       <Project>{6DBDC5D8-75EB-43BD-8355-870A3CC32E3E}</Project>
       <Name>JokerApi</Name>
     </ProjectReference>
