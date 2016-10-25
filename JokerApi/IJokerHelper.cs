@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace JokerApi
 {
     /// <summary>
-    /// Interface IJokerHelper
+    /// This defines some basic functions that every iteration of this library should have!
     /// </summary>
     public interface IJokerHelper
     {
