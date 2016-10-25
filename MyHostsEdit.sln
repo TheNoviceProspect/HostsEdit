@@ -12,6 +12,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokerApiTests", "JokerLibTests\JokerApiTests.csproj", "{5BDDBBDB-B6FB-4EE1-A11B-99AF10C92C3A}"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "HostsEditDocumentation", "HostsEditDocumentation\HostsEditDocumentation.shfbproj", "{BE72DB88-DC7C-4D30-B4B7-491799561C35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6880EF08-3ACD-41D1-B1E3-5E4030348FBE} = {6880EF08-3ACD-41D1-B1E3-5E4030348FBE}
+		{63F0FCB0-1AEB-4133-9978-A75BFF9F60C3} = {63F0FCB0-1AEB-4133-9978-A75BFF9F60C3}
+		{6DBDC5D8-75EB-43BD-8355-870A3CC32E3E} = {6DBDC5D8-75EB-43BD-8355-870A3CC32E3E}
+		{5BDDBBDB-B6FB-4EE1-A11B-99AF10C92C3A} = {5BDDBBDB-B6FB-4EE1-A11B-99AF10C92C3A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,26 +48,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://mitos-kalandiel.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = HostsEditGui\\HostsEditGui.csproj
-		SccProjectName1 = HostsEditGui
-		SccLocalPath1 = HostsEditGui
-		SccProjectUniqueName2 = HostsEditCmd\\HostsEditCmd.csproj
-		SccProjectName2 = HostsEditCmd
-		SccLocalPath2 = HostsEditCmd
-		SccProjectUniqueName3 = JokerLib\\JokerApi.csproj
-		SccProjectName3 = JokerLib
-		SccLocalPath3 = JokerLib
-		SccProjectUniqueName4 = JokerLibTests\\JokerApiTests.csproj
-		SccProjectName4 = JokerLibTests
-		SccLocalPath4 = JokerLibTests
-		SccProjectUniqueName5 = HostsEditDocumentation\\HostsEditDocumentation.shfbproj
-		SccProjectName5 = HostsEditDocumentation
-		SccLocalPath5 = HostsEditDocumentation
 	EndGlobalSection
 EndGlobal
