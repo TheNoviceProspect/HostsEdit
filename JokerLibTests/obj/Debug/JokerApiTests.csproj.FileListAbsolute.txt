@@ -7,12 +7,3 @@ C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\D
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerApiTests.csprojResolveAssemblyReference.cache
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerApiTests.dll
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerApiTests.pdb
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\JokerApiTests.dll
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\JokerApiTests.pdb
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\JokerApi.dll
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\JokerApi.pdb
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\bin\Debug\JokerApi.xml
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\obj\Debug\JokerApiTests.csprojResolveAssemblyReference.cache
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\obj\Debug\JokerApiTests.dll
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLibTests\obj\Debug\JokerApiTests.pdb
