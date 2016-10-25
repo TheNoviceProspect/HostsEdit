@@ -1,0 +1,5 @@
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\bin\Release\JokerApi.dll
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\bin\Release\JokerApi.pdb
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.csprojResolveAssemblyReference.cache
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.dll
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.pdb
