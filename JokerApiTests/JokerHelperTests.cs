@@ -18,7 +18,7 @@ namespace JokerApi.Tests
         public void AddTest()
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.Add(a,b);
+            int expectedResult = myHelper.Add(a, b);
             Assert.IsTrue(expectedResult == 12);
         }
 

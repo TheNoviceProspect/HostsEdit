@@ -1,8 +1,0 @@
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Release\HostsEditCmd.exe.config
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Release\HostsEditCmd.exe
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Release\HostsEditCmd.pdb
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Release\JokerApi.dll
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Release\JokerApi.pdb
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Release\HostsEditCmd.csprojResolveAssemblyReference.cache
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Release\HostsEditCmd.exe
-C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Release\HostsEditCmd.pdb

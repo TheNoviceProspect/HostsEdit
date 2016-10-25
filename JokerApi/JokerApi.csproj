@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileHandling.cs" />
     <Compile Include="JokerHelper.cs" />
     <Compile Include="IJokerHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
