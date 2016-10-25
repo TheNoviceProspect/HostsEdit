@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2016.9.17.0" projectFile="C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\HostsEditDocumentation.shfbproj" started="25/10/2016 16:48:17">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+Locating components in the following folder(s):
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Using framework reflection data for &#39;.NET Framework 4.6.1&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2016.9.17.0
+Copyright &#169; 2006-2016, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\JokerApi.csproj
+SHFB: Warning BE0006: Unable to locate any documentation sources for &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerApi\JokerApi.csproj&#39; (Configuration: Debug Platform: AnyCPU)
+Source: C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\HostsEditCmd.csproj
+    Found project &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\HostsEditCmd.csproj&#39;
+Source: C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\HostsEditGui.csproj
+    Found project &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\HostsEditGui.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.exe&#39;
+    Found assembly &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\bin\Debug\HostsEditGui.exe&#39;
+
+References to include (excluding framework assemblies):
+    None
+
+Copying XML comments files
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.XML -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\HostsEditCmd.XML
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\bin\Debug\HostsEditGui.XML -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\HostsEditGui.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0125
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0020
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateRefInfo.proj]
+Build started 25/10/2016 16:48:19.
+Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  No source code context base path specified.  Source context information is unavailable.
+  Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 1 namespaces, 1 types, and 2 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.35
+    Last step completed in 00:00:01.7013
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - TransformManifest.proj]
+Build started 25/10/2016 16:48:21.
+Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.44
+    Last step completed in 00:00:01.7662
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0420
+</buildStep>
+<buildStep step="CopyConceptualContent">
+Copying conceptual content...
+Copying standard token shared content file...
+Checking for other token files...
+Checking for code snippets files...
+Copying images and creating the media map file...
+Generating conceptual topic files
+    Parsing topic file &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\Welcome.aml&#39;
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\Welcome.aml -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\ddueXml\782b8467-609f-4d84-8a78-1118734d5fd0.xml
+    Parsing topic file &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\VersionHistory\VersionHistory.aml&#39;
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\VersionHistory\VersionHistory.aml -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\ddueXml\6c5e3eb0-1334-4f7c-85f8-721fcb26fb8e.xml
+    Parsing topic file &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\VersionHistory\v1.0.0.0.aml&#39;
+    C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\Content\VersionHistory\v1.0.0.0.aml -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\ddueXml\e6e7a3d2-2d26-4741-9572-2d5f6db9f5e1.xml
+    Last step completed in 00:00:00.0670
+</buildStep>
+<buildStep step="CreateConceptualTopicConfigs">
+Creating conceptual topic configuration files...
+    Companion files
+    _ContentMetadata_.xml
+    Merging topic IDs into manifest.xml
+    Last step completed in 00:00:00.0140
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\icons\Help.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\Help.png
+    Last step completed in 00:00:00.0090
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 25/10/2016 16:48:23.
+Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.23
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.5481
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.7450
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\sandcastle.config
+  Updating reference topic configurations.
+    Added configuration for &#39;IntelliSense Component&#39; after &#39;Show Missing Documentation Component&#39; (instance 1)
+    Added configuration for &#39;API Token Resolution&#39; before &#39;Show Missing Documentation Component&#39; (instance 1)
+    Replaced configuration for &#39;Syntax Component&#39; (instance 1) with configuration for &#39;Syntax Component&#39;
+    Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
+  Updating conceptual topic configurations.
+    Skipping component &#39;IntelliSense Component&#39;, not used in conceptual build
+    Skipping component &#39;API Token Resolution&#39;, not used in conceptual build
+    Replacing default configuration for &#39;Syntax Component&#39; with the custom configuration
+    Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
+    Removing unused ExampleComponent.
+    Last step completed in 00:00:00.0280
+</buildStep>
+<buildStep step="BuildTopics">
+Building help topics...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - BuildTopics.proj]
+Build started 25/10/2016 16:48:24.
+Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\BuildTopics.proj&quot; on node 1 (default targets).
+BuildTopics:
+  BuildAssembler (v2016.9.17.0)
+  Copyright &#184; 2006-2016, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [N:HostsEditGui] Missing &lt;summary&gt; documentation [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\BuildTopics.proj]
+  Processed 11 topic(s)
+  1 warning(s)
+  CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
+  ResolveArtLinksComponent: Copying media files...
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 5 of 30.
+Done Building Project &quot;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\BuildTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:25.02
+    Last step completed in 00:00:25.3604
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2016.9.17.0
+Copyright &#184; 2006-2016, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing Help 1 files in C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1
+Processed 11 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\HostsEditDocumentation.hhk
+Saving HTML Help 1 table of contents to C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\HostsEditDocumentation.hhc
+    Last step completed in 00:00:00.4801
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\styles\branding.css
+    Last step completed in 00:00:00.7281
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+SHFB: Warning BE0060: The file path &#39;C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\&#39; contains a comma or &#39;.h&#39; which may cause the Help 1 compiler to fail.
+    Last step completed in 00:00:00.0061
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Program Files (x86)\MSBuild\14.0\bin\MSBuild.exe - Build1xHelpFile.proj]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling c:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\HostsEditDocumentation.chm
+  
+  
+  
+HHC3004 : warning : AlertCaution.png : The HTML tag &quot;•Y&#227;&#252;&#175;&#248;18&#165;B&#193;&#193;`&#202;IEND&#174;B`‚&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : AlertNote.png : The HTML tag &quot;&#241;+&#174;&#231;*x™&#178;&lt;&#185;$9E[-qWW.(&#206;I+6aaš@.&#194;y™24&#224;&#243;&#204;&#160;‘...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : AlertNote.png : The HTML tag &quot;&#197;5qo&lt;/&#199;&#219;&#241;QC]&#195;@C&#165;a•a—&#225;„‘&#185;&#209;&lt;&#163;&#213;FFŒi&#198;\&#227;$&#227;m&#198;m&#198;&#163;&amp;&amp;!&amp;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : AlertNote.png : The HTML tag &quot;&#218;7&#186;4&#186;?&#198;.fY&#204;&#213;XXIlK9.*&#174;6nl&#190;&#223;&#252;&#237;&#243;‡&#226;&#226;&#227;{˜/&#200;]py&#161;&#206;&#194;&#244;…...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : AlertNote.png : The HTML tag &quot;&#184;&#188;e&#167;&#201;&#206;&#205;;?T&#164;T&#244;T&#250;T6&#238;&#210;&#221;&#181;a&#215;&#248;n&#209;&#238;{&#188;&#246;4&#236;&#213;&#219;[&#188;&#247;&#253;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : AlertNote.png : The HTML tag &quot;}4/9&#184;ƒKx4&#220;…+&#213;œ&#241;9Š&#232;†&#174;&#223;&#216;&#176;)€&#196;•&#171;&#255;&#211;C&#160;&#244;&#180;qu&#233;&#246;&#181;&#177;‚&#189;&#199;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : CFW.gif : The HTML tag &quot;T&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : CodeExample.png : The HTML tag &quot;G&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;:::::::::^;;;s™˜7˜S;^::]]::::::+#7::::::...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;]::::(M:]]:-r_*&lt;:::::&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#39;lQC)-}/:::X&#39;?&#39;4˜„dE,–e:13_?H	€...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#205;e1&#209;k8&#210;m;&#206;j7&#206;qC&#244;&#229;&#222;&#255;&#255;&#255;&#247;&#234;&#227;&#197;&#179;&#169;&#241;&#220;&#208;&#252;&#246;&#243;&#255;&#255;&#255;&#250;&#219;&#203;&#223;yF&#224;|J&#219;vD&#211;m...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#217;&#194;&#182;&#249;&#235;&#227;&#220;–r&#201;^(&#204;f3&#204;g4&#204;g4&#201;e4&#192;Y&#39;&#216;&#171;•&#248;&#254;&#255;&#250;&#238;&#231;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#207;j7&#204;f3&#204;f3&#204;f3&#205;d0&#195;i&lt;&#204;&#185;&#176;&#251;&#255;&#255;&#250;&#241;&#236;&#216;‰b&#202;`+&#205;h4&#206;j7&#203;e2&#206;yO&#244;&#239;&#236;&#255;&#255;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#208;h4&#220;˜v&#255;&#255;&#255;&#255;&#255;&#252;k^W&#245;&#216;&#200;&#255;&#254;&#254;&#255;&#254;&#253;&#242;&#163;{&#233;€L&#223;wD&#207;xL&#212;&#181;&#164;&#239;&#216;&#205;&#222;™w&#201;\&#203;a...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#190;_/&#255;&#191;`0&#255;&#192;`0&#255;&#194;a1&#255;&#195;b1&#255;&#194;j&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#245;&#217;&#203;&#231;&#252;&#244;&#240;&#255;&#250;&#250;&#250;&#255;&#247;&#247;&#247;&#255;&#244;&#244;&#244;&#255;&#229;&#202;&#188;&#255;&#196;d4&#255;&#196;c3&#255;&#199;e4&#255;&#201;f4&#255;&#203;g5&#255;&#204;g5&#255;&#205;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#205;g4&#255;&#205;g5&#255;&#204;g5&#255;&#202;f4&#255;&#199;e3&#255;&#196;c2&#255;&#194;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#210;n&lt;&#255;&#210;m;&#255;&#208;k8&#255;&#206;i6&#255;&#205;g4&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#209;l9&#255;&#207;i6&#255;&#205;g4&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#187;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#208;k8&#255;&#206;h5&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;f3&#255;&#204;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#215;r?&#255;&#216;tA&#255;&#215;sA&#255;&#212;q@&#255;&#215;T&#255;&#254;&#245;&#241;&#255;&#255;&#255;&#255;&#255;&#255;&#255;&#255;&#255;&#255;&#254;&#254;&#255;&#248;&#227;&#216;&#255;‰vk&#193;`)&#239;&#201;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : favicon.ico : The HTML tag &quot;&#255;&#217;&#175;š&#255;&#192;X#&#255;&#185;V$&#255;&#213;&#175;Ÿ&#255;&#247;&#255;&#255;&#255;&#244;&#226;&#217;&#255;SKF&#200;Œ&quot;Ÿ†2&#242;&#225;&#215;&#255;&#248;&#255;&#255;&#255;&#199;}X&#255;&#187;E...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;&#160;”z&#172;&#169;&#185;&#217;&#217;&#177;cG&#221;†Z„jnnŽ&#177;&#241;I†FR\&#205;0•&#202;/x&#184;Ž&#160;&#161;&#190;Š&#214;–&#174;ij&#160;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;Œ?O…›&#39;&#225;&#204;q&#247;-U&#236;&#186;&#243;&#205;&#209;#G.=&#247;&#220;s&#249;B&#161;&#240;&#247;{;;&#255;&#227;&#189;P&#191;&#196;&#248;&#39;ZZZ&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;&#240;&#225;kh&#168;‰&#227;Bb8V`&#181;‡&#239;IJŠ…&#247;‚E„}!&quot;&#202;z&#217;y&#219;Žh&quot;‘‰Db0...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;?&#228;&#173;&#161;P&#210;l&#190;&#174;’‡&#238;JP_e&#201;&#174;+&#241;|)&#193;&#243;&#245;&#244;A&#180;SO…#&#194;&#231;d;‚&#160;…€„...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;&#209;fŠ&#197;b&#178;iiRžI&#207;ƒu&#176;†&#160;s†:EC&#177;&#228;“ž-&#224;&#249;&#207;&#175;&#230;ˆA`&#201;}&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;h&#215;B&#255;&#181;9L&#170;XOC]u@Q&#230;w&#185;&#214;,V&#180;W#`&#209;8B&#226;b&#169;&#170;p™››&#163;&#170;&#170;J/&#202;u&#224;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;Ÿ&#201;d&#166;C&#187;	‹;&#200;&#254;&#201;&#201;&#201;s===—w&#255;&#254;&#39;&#216;&#177;F&#226;&#232;4,&#165;&#201;„”r@	A&#196;Q&#172;n&#169;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;&#254;&#252;Š{&#238;&#217;U&#255;&#161;&#237;&#235;&#229;&#165;&#254;^&amp;&#167;&#179;W&#249;&#173;\G&#225;&#168;&#224;&#222;u\&#198;S–ž“&#211;&#188;vtŒ‡&#198;8rV#c&#203;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;5‹&#242;G‰pž&#219;oŽ&#242;&#216;&#237;b&#231;m&#219;8&#180;&#238;?Ÿ}6s&#232;&#240;&#225;&#239;&#190;&#252;“Ÿ&#188;?&#164;	*y&#39;#&#223;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;&#244;&#250;Dh&#252;[&#234;&#254;&#175;@m&#217;&#178;&#165;&#246;&#198;u&#235;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : Help.png : The HTML tag &quot;=&#173;&#199;&#210;&#233;&#254;&#203;W&#174;&#188;q&#242;&#212;&#169;&#222;&#169;&#169;&#169;`:&lt;f‹&#244;&#206;o@y&#190;&#196;€&#202;;v&#238;\&#223;&#208;&#208;ps&lt;_...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privclass.gif : The HTML tag &quot;&#179;5c&#181;dvgw&#232;&#226;&#209;&#240;&#192;4ž&#180;^p‰žxUh&#237;&#181;dvŽOb{&#245;&#225;†&#255;&#255;&#255;!&#249;O,...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privdelegate.gif : The HTML tag &quot;&#161;&#218;n&#219;H[u&#183;&#193;&#210;&#166;&#178;&#199;&#167;&#177;&#199;&#216;m&#217;&#201;&#208;&#221;&#219;&#223;&#231;&#169;E&#170;&#235;&#238;&#243;&#234;&#236;&#241;ž&#176;J^w&#242;&#243;&#246;˜&#167;&#188;&#187;&#195;&#212;&#244;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privdelegate.gif : The HTML tag &quot;0`@ &#170;|&#169;z&#165;I.&#244;&#205;&#199;ˆH&quot;?@`…&#206;‚r@D$E&#160;8H„€&#204;A...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privenumeration.gif : The HTML tag &quot;&#241;&#224;Ždv&#217;&#191;i&#189;&#198;&#214;&#234;&#207;o&#191;&#182;&#171;cu˜&#167;&#188;&#223;&#184;I&#184;&#193;&#210;&#171;&#183;&#203;&#233;&#202;ggwm–&#231;&#200;dUhž...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privevent.gif : The HTML tag &quot;‡@P$&quot;58#Q&#172;DR0&#227;B•œ(ˆ;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privextension.gif : The HTML tag &quot;Ÿ&#227;&#172;&#227;L~&#225;&#189;&#198;&#214;t&#165;&#255;z+{&#167;O&#168;&#188;p&#189;†&#176;&#255;@l&#199;&#244;&#230;&#244;dv]o‡&#209;j&#210;Hx&#217;Oc|&#209;m&#210;&#250;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privinterface.gif : The HTML tag &quot;@J„!IW83&quot;,*MW&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privmethod.gif : The HTML tag &quot;Ÿ&#251;&#251;&#252;&#250;›&#251;•8–&#203;g&#204;Ÿ&#170;&#187;|-}&#244;&#230;&#244;&#210;k&#211;0€&#243;&#227;&#243;&#211;&#216;&#219;&#240;&#212;&#240;&#236;&#210;&#236;N‘z+{Oc|&#187;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privmethod.gif : The HTML tag &quot;&#167;Š+92$,-]	Nh&quot;K)8C4I	H‚GFR3#U?‚WL...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : privproperty.gif : The HTML tag &quot;ˆT@`#j &#210;&#240;&#167;†ƒ,D&#233;€ !&#176;&#193;Šl&#193;4&#175;P0Z$&#228;KƒQ&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protclass.gif : The HTML tag &quot;&#179;&#203;&#175;u&#244;&#225;†&#200;&#171;d&#216;l&#217;&#238;&#234;&#222;&#235;&#225;&#205;&#166;…8&#237;&#181;žx&#240;&#192;4&#243;&#235;&#219;&#245;&#236;&#178;&#240;&#232;&#214;&#238;&#219;–&#254;&#245;&#172;5c&#181;&#228;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protdelegate.gif : The HTML tag &quot;&#161;&#234;‹&#235;&#203;&#204;&#201;&#228;&#231;&#238;H[u&#217;&#222;&#230;&#219;&#223;&#231;—&#163;&#173;;Oi&#179;&#189;&#208;&#235;&#238;&#243;“&#161;&#186;&#249;&#250;&#251;&#209;&#188;&#226;K_y&#223;&#207;&#174;&#169;E&#170;—...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : protdelegate.gif : The HTML tag &quot;Qk&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protenumeration.gif : The HTML tag &quot;&#225;&#211;&#183;&#235;&#219;&#180;&#229;&#195;Y&#255;&#255;&#255;!&#249;Z,&#164;€Z‚ƒ!ƒŽ#:Žƒ$...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : protenumeration.gif : The HTML tag &quot;U&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protevent.gif : The HTML tag &quot;‡O!97 ‡J,K‘“D;&#163;‡L&quot;+‘’G12‚&amp;	@/$&#39;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protextension.gif : The HTML tag &quot;&#238;&#190;&#238;]’&#253;Hx&#217;M&#228;&#235;‘&#236;VŠ&#243;&#216;&#168;ž&#240;&#227;&#240;–R—u&#39;ut&#165;&#255;&#227;&#172;&#227;Kš*P&#160;|-}&#245;&#235;&#174;L...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protinterface.gif : The HTML tag &quot;:0H;KB6!/=,A(žK„1?E.	K9-&#199;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protmethod.gif : The HTML tag &quot;&amp;&#39;&#206;H‚!6†&#198;&#213;~—&#232;&#197;}~|}„};&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protoperator.gif : The HTML tag &quot;ƒ#&#236;?	…‚,„&#247;&#167;;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protproperty.gif : The HTML tag &quot;	i&#210;&#197;(1&#188;&#248;&#209;‘&amp;&quot;x PBcI,„&#168;X‰c˜Š&#172;)&#243;&#166;&#208;D†$&#178;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : protstructure.gif : The HTML tag &quot;;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : protstructure.gif : The HTML tag &quot;x0&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : pubclass.gif : The HTML tag &quot;&#179;&#245;&#224;…&#244;&#225;†&#231;&#240;&#249;&#234;&#242;&#250;&#241;&#203;O&#238;&#182;&#244;&#214;kCs&#201;&#245;&#225;†&#239;&#190;/&#240;&#192;4&#233;&#241;&#249;&#255;&#255;&#255;!&#249;2,...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : pubdelegate.gif : The HTML tag &quot;Qk&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : pubenumeration.gif : The HTML tag &quot;xz3G&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : pubextension.gif : The HTML tag &quot;&#188;p&#189;&#210;k&#211;&#230;˜&#231;Tˆ&#240;|.|&#250;›&#251;&#250;™&#251;z+{&#169;R&#170;&#230;&#204;&#230;&#232;&#209;&#232;~0&#169;P&#170;5Ž&#167;O&#168;t&#165;&#255;E...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : pubfield.gif : The HTML tag &quot;Ab$Až(h0 Ai&#184;…€&#170;&#178;6G)~H „vNŒNB+’—˜...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : pubmethod.gif : The HTML tag &quot;ž&#233;&#229;&#171;&#242;&#224;&#243;&#250;&#171;&#251;|-}&#250;™&#251;&#213;o&#213;–R—&#221;˜&#222;&#211;n&#212;&#250;›&#251;&#236;&#210;&#236;&#181;&#187;&#173;5Ž˜&#164;&#174;&#228;&#202;&#228;&#226;&#175;&#226;&#235;...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : pubproperty.gif : The HTML tag &quot;„/\@k[Ub&#173;71.!-Oq+?p*9sR6Yzd:^y)...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : slMobile.gif : The HTML tag &quot;&#241;&amp;&#196;ˆ(&#180;‰3&#231;&#206;ˆf&lt;&#217;p#A~&#201;S&#162;&#212;&#169;œ&#201;&#212;&#161;&#194;&#175;&amp;Š;&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3002 : warning : static.gif : The HTML tag &quot;D&quot; is missing a closing angle bracket. [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : xna.gif : The HTML tag &quot;‡Œ…JVCF?“Œ&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : branding.js : The HTML tag &quot;= tabCount)    {        var tabTemp = document...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+HHC3004 : warning : branding.js : The HTML tag &quot;= tabCount)            {                var ta...&quot; is not a valid HTML tag (it does not begin with an alphanumeric character). [C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Build1xHelpFile.proj]
+  
+  
+  
+  Compile time: 0 minutes, 1 second
+  
+  76	Topics
+  
+  80	Local links
+  
+  2,385	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created c:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditDocumentation\temp\Output\HtmlHelp1\HostsEditDocumentation.chm, 160,840 bytes
+  
+  Compression decreased file by 458,173 bytes.
+  
+    Last step completed in 00:00:01.8855
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.1690
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 25/10/2016 16:48:52.  Total time: 00:00:34.9190
+
+</buildStep>
+</shfbBuild>

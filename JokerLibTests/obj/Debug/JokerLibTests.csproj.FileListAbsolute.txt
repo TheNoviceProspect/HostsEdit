@@ -1,0 +1,9 @@
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\JokerLibTests.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\JokerLibTests.pdb
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\JokerLib.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\JokerLib.pdb
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\bin\Debug\JokerLib.xml
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerLibTests.csprojResolveAssemblyReference.cache
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerLibTests.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLibTests\obj\Debug\JokerLibTests.pdb

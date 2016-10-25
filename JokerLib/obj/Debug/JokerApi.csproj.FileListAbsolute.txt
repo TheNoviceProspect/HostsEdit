@@ -1,0 +1,15 @@
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerApi.xml
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerApi.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerApi.pdb
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerApi.dll.CodeAnalysisLog.xml
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerApi.dll.lastcodeanalysissucceeded
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\obj\Debug\JokerApi.dll
+C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\obj\Debug\JokerApi.pdb
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\bin\Debug\JokerApi.xml
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\bin\Debug\JokerApi.dll
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\bin\Debug\JokerApi.pdb
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\bin\Debug\JokerApi.dll.CodeAnalysisLog.xml
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\bin\Debug\JokerApi.dll.lastcodeanalysissucceeded
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\obj\Debug\JokerApi.csprojResolveAssemblyReference.cache
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\obj\Debug\JokerApi.dll
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\JokerLib\obj\Debug\JokerApi.pdb
