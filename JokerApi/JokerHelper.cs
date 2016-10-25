@@ -58,7 +58,7 @@ namespace JokerApi
         /// TODO Edit XML Comment Template for Sub
         public int Sub(int Num1, int Num2)
         {
-            var result = Num1 + Num2;
+            var result = Num1 - Num2;
             return result;
         }
     }

@@ -10,3 +10,15 @@ C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\HostsEditCmd\bin\De
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.exe
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.pdb
 C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.csprojResolveAssemblyReference.cache
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.exe.config
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.XML
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.exe
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.pdb
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.exe.CodeAnalysisLog.xml
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\HostsEditCmd.exe.lastcodeanalysissucceeded
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\JokerApi.dll
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\JokerApi.pdb
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\bin\Debug\JokerApi.xml
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.csprojResolveAssemblyReference.cache
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.exe
+C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditCmd\obj\Debug\HostsEditCmd.pdb

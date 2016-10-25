@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>JokerApiTests</name>
+  </assembly>
+  <members>
+    <member name="T:JokerApi.Tests.JokerHelperTests">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:JokerApi.Tests.JokerHelperTests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.Tests.JokerHelperTests.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>JokerApi.Tests.JokerHelperTests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.Tests.JokerHelperTests.AddTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApi.Tests.JokerHelperTests.AddTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.Tests.JokerHelperTests.DivTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApi.Tests.JokerHelperTests.DivTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.Tests.JokerHelperTests.MulTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApi.Tests.JokerHelperTests.MulTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.Tests.JokerHelperTests.SubTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApi.Tests.JokerHelperTests.SubTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+  </members>
+</doc>
