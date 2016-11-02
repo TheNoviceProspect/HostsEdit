@@ -33,7 +33,7 @@ public class JokerHelper : IJokerHelper
         public int DivNums(int Num1, int Num2)
         {
             var result = 0;
-            if (Num2 == 0) {
+            if (Num2 != 0) {
                 result = Num1 / Num2;
             } 
             //var result = Num1 / Num2;
