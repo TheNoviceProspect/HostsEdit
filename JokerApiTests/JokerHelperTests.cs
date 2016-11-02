@@ -34,7 +34,7 @@ namespace JokerApi.Tests
         public void DivByZeroTest() 
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.DivNums(a,0);
+            int expectedResult = myHelper.DivNums(a, 0);
             Assert.IsNull(expectedResult);
         }
 
