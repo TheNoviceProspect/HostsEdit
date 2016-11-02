@@ -35,7 +35,7 @@ namespace JokerApi.Tests
         {
             JokerHelper myHelper = new JokerHelper();
             int expectedResult = myHelper.DivNums(a, 0);
-            Assert.IsNull(expectedResult);
+            Assert.IsTrue(expectedResult == 0);
         }
 
         [TestMethod()]
