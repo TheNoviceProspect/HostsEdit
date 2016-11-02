@@ -31,6 +31,14 @@ namespace JokerApi.Tests
         }
 
         [TestMethod()]
+        public void DivByZeroTest() 
+        {
+            JokerHelper myHelper = new JokerHelper();
+            int expectedResult = myHelper.DivNums(a,0);
+            Assert.IsNull(expectedResult);
+        }
+
+        [TestMethod()]
         public void MulTest()
         {
             JokerHelper myHelper = new JokerHelper();
