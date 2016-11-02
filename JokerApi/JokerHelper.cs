@@ -18,7 +18,7 @@ public class JokerHelper : IJokerHelper
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The num2.</param>
         /// <returns>System.Int32.</returns>
-        public int Add(int Num1, int Num2)
+        public int AddNums(int Num1, int Num2)
         {
             var result = Num1 + Num2;
             return result;
@@ -30,7 +30,7 @@ public class JokerHelper : IJokerHelper
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The Num2.</param>
         /// <returns>System.Int32.</returns>
-        public int Div(int Num1, int Num2)
+        public int DivNums(int Num1, int Num2)
         {
             var result = Num1 / Num2;
             return result;
@@ -42,7 +42,7 @@ public class JokerHelper : IJokerHelper
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The Num2.</param>
         /// <returns>System.Int32.</returns>
-        public int Mul(int Num1, int Num2)
+        public int MulNums(int Num1, int Num2)
         {
             var result = Num1 * Num2;
             return result;
@@ -54,7 +54,7 @@ public class JokerHelper : IJokerHelper
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The Num2.</param>
         /// <returns>System.Int32.</returns>
-        public int Sub(int Num1, int Num2)
+        public int SubNums(int Num1, int Num2)
         {
             var result = Num1 - Num2;
             return result;

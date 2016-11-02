@@ -18,7 +18,7 @@ namespace JokerApi.Tests
         public void AddTest()
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.Add(a, b);
+            int expectedResult = myHelper.AddNums(a, b);
             Assert.IsTrue(expectedResult == 12);
         }
 
@@ -26,7 +26,7 @@ namespace JokerApi.Tests
         public void DivTest()
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.Div(a, b);
+            int expectedResult = myHelper.DivNums(a, b);
             Assert.IsTrue(expectedResult == 5);
         }
 
@@ -34,7 +34,7 @@ namespace JokerApi.Tests
         public void MulTest()
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.Mul(a, b);
+            int expectedResult = myHelper.MulNums(a, b);
             Assert.IsTrue(expectedResult == 20);
         }
 
@@ -42,7 +42,7 @@ namespace JokerApi.Tests
         public void SubTest()
         {
             JokerHelper myHelper = new JokerHelper();
-            int expectedResult = myHelper.Sub(a, b);
+            int expectedResult = myHelper.SubNums(a, b);
             Assert.IsTrue(expectedResult == 8);
         }
     }

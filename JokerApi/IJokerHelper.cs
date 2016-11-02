@@ -17,23 +17,25 @@ namespace JokerApi
         /// <param name="Num1">The num1.</param>
         /// <param name="Num2">The num2.</param>
         /// <returns>System.Int32.</returns>
-        int Add(int Num1, int Num2);
+        int AddNums(int Num1, int Num2);
         /// <summary>
-        /// Subs the specified num1.
+        /// Subtracts the specified num2 from num1 somehow.
         /// </summary>
         /// <param name="Num1">The num1.</param>
         /// <param name="Num2">The num2.</param>
         /// <returns>System.Int32.</returns>
-        int Sub(int Num1, int Num2);
+        int SubNums(int Num1, int Num2);
         /// <summary>Muls the specified Num1.</summary>
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The Num2.</param>
         /// <returns>System.Int32.</returns>
-        int Mul(int Num1, int Num2);
+        int MulNums(int Num1, int Num2);
         /// <summary>Divs the specified Num1.</summary>
         /// <param name="Num1">The Num1.</param>
         /// <param name="Num2">The Num2.</param>
         /// <returns>System.Int32.</returns>
-        int Div(int Num1, int Num2);
+        /// TODO: come up with a way to make division by 0 impossible before exception is thrown
+        int DivNums(int Num1, int Num2);       
+
     }
 }
