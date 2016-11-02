@@ -32,7 +32,7 @@ public class JokerHelper : IJokerHelper
         /// <returns>System.Int32.</returns>
         public int DivNums(int Num1, int Num2)
         {
-            int result;
+            var result = 0;
             if (Num2 != 0) {
                 result = Num1 / Num2;
             } 
