@@ -1,0 +1,11 @@
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Release\HostsEditGui.exe.config
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Release\HostsEditGui.exe
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Release\HostsEditGui.pdb
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Release\HostsEditCmd.exe
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Release\HostsEditCmd.pdb
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.csprojResolveAssemblyReference.cache
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.MainForm.resources
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.Properties.Resources.resources
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.csproj.GenerateResource.Cache
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.exe
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Release\HostsEditGui.pdb
