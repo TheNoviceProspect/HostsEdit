@@ -56,7 +56,7 @@ public class JokerHelper : IJokerHelper
         /// <returns>System.Int32.</returns>
         public int Sub(int Num1, int Num2)
         {
-            var result = Num1 + Num2;
+            var result = Num1 - Num2;
             return result;
         }
     }
