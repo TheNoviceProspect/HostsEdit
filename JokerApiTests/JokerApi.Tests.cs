@@ -2,7 +2,7 @@
 using JokerApi;
 using NUnit.Framework;
 
-namespace JokerApiTests
+namespace JokerApi.Tests
 {
     [TestFixture]
     public class JokerApiTests

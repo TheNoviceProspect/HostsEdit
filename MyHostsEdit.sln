@@ -19,7 +19,7 @@ Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "HostsEditDocumentation", "H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokerApi", "JokerApi\JokerApi.csproj", "{6DBDC5D8-75EB-43BD-8355-870A3CC32E3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokerApiTests", "JokerApiTests\JokerApiTests.csproj", "{067456C0-086C-46A8-B37F-1405717B7BFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JokerApi.Tests", "JokerApiTests\JokerApi.Tests.csproj", "{067456C0-086C-46A8-B37F-1405717B7BFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
