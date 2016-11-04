@@ -28,4 +28,3 @@ C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.Pr
 C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.csproj.GenerateResource.Cache
 C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.exe
 C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.pdb
-C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Debug\HostsEditGui.exe.config

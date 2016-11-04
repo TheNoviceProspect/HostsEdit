@@ -13,7 +13,7 @@
     <RootNamespace>HostsEditDocumentation</RootNamespace>
     <Name>HostsEditDocumentation</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.6.1</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
     <OutputPath>..\Help\</OutputPath>
     <HtmlHelpName>HostsEditDoc</HtmlHelpName>
     <Language>en-US</Language>
@@ -108,8 +108,9 @@
     <CopyrightHref>%28c%29 2000-2017 Mitos Kalandiel</CopyrightHref>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="HostsEditGui" isDocumented="True" xmlns="">The GUI element of the HostsEdit app.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="JokerApi" isDocumented="True" xmlns="">This is a helper library for Joker Solutions Apps</NamespaceSummaryItem>
-<NamespaceSummaryItem name="JokerApi.Tests" isDocumented="True" xmlns="">Ignore this! (internal: Tests for JokerAPI)</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="JokerApi" isDocumented="True" xmlns="">This is a helper library for Joker Solutions Apps</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="JokerApi.Tests" isDocumented="True" xmlns="">Ignore this! (internal: Tests for JokerAPI)</NamespaceSummaryItem>
+    </NamespaceSummaries>
     <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected</VisibleItems>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
