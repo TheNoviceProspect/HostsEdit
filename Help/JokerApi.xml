@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>JokerApi</name>
+  </assembly>
+  <members>
+    <member name="T:JokerApi.FileHandling">
+      <summary>
+            Class FileHandling.
+            </summary>
+    </member>
+    <member name="M:JokerApi.FileHandling.#ctor">
+      <summary>
+            Initializes a new instance of the <see cref="T:JokerApi.FileHandling" /> class.
+            </summary>
+    </member>
+    <member name="T:JokerApi.IJokerHelper">
+      <summary>
+            This defines some basic functions that every iteration of this library should have!
+            </summary>
+    </member>
+    <member name="M:JokerApi.IJokerHelper.AddNums(System.Int32,System.Int32)">
+      <summary>
+            Adds the specified num1 and num2 somehow.
+            </summary>
+      <param name="Num1">The num1.</param>
+      <param name="Num2">The num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.IJokerHelper.DivNums(System.Int32,System.Int32)">
+      <summary>Divs the specified Num1.</summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The Num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.IJokerHelper.MulNums(System.Int32,System.Int32)">
+      <summary>Muls the specified Num1.</summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The Num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.IJokerHelper.SubNums(System.Int32,System.Int32)">
+      <summary>
+            Subtracts the specified num2 from num1 somehow.
+            </summary>
+      <param name="Num1">The num1.</param>
+      <param name="Num2">The num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="T:JokerApi.JokerHelper">
+      <summary>
+            Class JokerHelper.
+            </summary>
+    </member>
+    <member name="M:JokerApi.JokerHelper.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>JokerApi.JokerHelper</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApi.JokerHelper.AddNums(System.Int32,System.Int32)">
+      <summary>
+            Adds the specified Num1.
+            </summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.JokerHelper.DivNums(System.Int32,System.Int32)">
+      <summary>
+            Divs the specified Num1.
+            </summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The Num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.JokerHelper.MulNums(System.Int32,System.Int32)">
+      <summary>
+            Muls the specified Num1.
+            </summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The Num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+    <member name="M:JokerApi.JokerHelper.SubNums(System.Int32,System.Int32)">
+      <summary>
+            Subs the specified Num1.
+            </summary>
+      <param name="Num1">The Num1.</param>
+      <param name="Num2">The Num2.</param>
+      <returns>System.Int32.</returns>
+    </member>
+  </members>
+</doc>
