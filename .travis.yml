@@ -3,7 +3,7 @@ solution: MyHostsEdit.sln
 sudo: required
 install:
   - nuget restore MyHostsEdit.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
+  - mono ./nunit-runner/NUnit.Runners.3.5.0/tools/nunit-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
