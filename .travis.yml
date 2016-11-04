@@ -6,4 +6,4 @@ install:
   - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
-  - mono ./nunit-runner/NUnit.Runners.3.5.0/tools/nunit-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
+  - mono ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
