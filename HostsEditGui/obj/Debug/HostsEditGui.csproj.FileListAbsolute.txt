@@ -29,3 +29,6 @@ C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.cs
 C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.exe
 C:\Users\smzb.HOME\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.pdb
 C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Debug\HostsEditGui.exe.config
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\bin\Debug\HostsEditGui.XML
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.exe
+C:\Users\smzb\Source\Repos\HostsEdit\HostsEditGui\obj\Debug\HostsEditGui.pdb
