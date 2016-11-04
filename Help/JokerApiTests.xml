@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>JokerApiTests</name>
+  </assembly>
+  <members>
+    <member name="T:JokerApiTests.JokerApiTests">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:JokerApiTests.JokerApiTests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApiTests.JokerApiTests.#ctor">
+      <summary>
+        <markup>
+          <include item="SMCAutoDocConstructor">
+            <parameter>JokerApiTests.JokerApiTests</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApiTests.JokerApiTests.AddTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApiTests.JokerApiTests.AddTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApiTests.JokerApiTests.DivTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApiTests.JokerApiTests.DivTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApiTests.JokerApiTests.MulTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApiTests.JokerApiTests.MulTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:JokerApiTests.JokerApiTests.SubTest">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:JokerApiTests.JokerApiTests.SubTest</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+  </members>
+</doc>

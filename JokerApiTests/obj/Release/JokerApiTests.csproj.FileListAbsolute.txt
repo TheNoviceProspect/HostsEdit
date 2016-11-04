@@ -1,8 +1,0 @@
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\bin\Release\JokerApiTests.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\bin\Release\JokerApiTests.pdb
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\bin\Release\JokerApi.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\bin\Release\JokerApi.pdb
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\obj\Release\JokerApiTests.csprojResolveAssemblyReference.cache
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\obj\Release\JokerApiTests.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApiTests\obj\Release\JokerApiTests.pdb

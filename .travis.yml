@@ -1,2 +1,9 @@
 language: csharp
 solution: MyHostsEdit.sln
+sudo: required
+install:
+  - nuget restore MyHostsEdit.sln
+  - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
+script:
+  - xbuild /p:Configuration=Release MyHostsEdit.sln
+  - mono ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
