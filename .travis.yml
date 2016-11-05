@@ -5,8 +5,21 @@ install:
   - nuget restore MyHostsEdit.sln
   - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
   - nuget install coveralls.net -Version 0.7.0 -OutputDirectory coveralls.net
+  - sudo apt-get install gtk-sharp2
+  - curl -sS https://api.nuget.org/packages/mono.cecil.0.9.5.4.nupkg > /tmp/mono.cecil.0.9.5.4.nupkg.zip
+  - unzip /tmp/mono.cecil.0.9.5.4.nupkg.zip -d /tmp/cecil
+  - cp /tmp/cecil/lib/net40/Mono.Cecil.dll .
+  - cp /tmp/cecil/lib/net40/Mono.Cecil.dll /tmp/cecil/
+  - git clone --depth=50 git://github.com/csMACnz/monocov.git ../../csMACnz/monocov
+  - cd ../../csMACnz/monocov
+  - cp /tmp/cecil/Mono.Cecil.dll .
+  - ./configure
+  - make
+  - sudo make install
+  - cd ~
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
+  - export LD_LIBRARY_PATH=/usr/local/lib
   - mono --debug --profile=monocov:outfile=monocovCoverage.cov,+MyHostsEdit ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
   - monocov --export-xml=monocovCoverage monocovCoverage.cov
   - cat monocovCoverage.cov
