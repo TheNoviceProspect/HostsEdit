@@ -2,8 +2,9 @@ language: csharp
 solution: MyHostsEdit.sln
 sudo: required
 addons:
-addons:
   sonarqube: true
+  code_climate:
+    repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
   apt:
     packages:
       - oracle-java8-installer
