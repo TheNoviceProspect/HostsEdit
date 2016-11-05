@@ -1,9 +1,12 @@
 language: csharp
 solution: MyHostsEdit.sln
 sudo: required
-jdk: oraclejdk8
+addons:
 addons:
   sonarqube: true
+  apt:
+    packages:
+      - oracle-java8-installer
 env:
   global:
     - secure: "Wq1yeBb1VwRWH/TV0yrl1iVZSJlZ0D111WSw0+v7swAFabIWA6LUak6ovaPoO476Gnk4T5NCiAyu1EbmkW812+hBgbKzKkC/advtfTfdiXosRITgrLE1/rgFneyPgqQ8fqLFn9eXjIMyiueQ9253ukZ6lo4o0k6lDmuOEJZC2FXC7AvvJazFkfwACdlGhpIGSy0v247Mxr03UVrDZI/Dh9VDG3hgAdq99A/sjr+r3xq/QPCLQr8IkZOGuCGvSxje+JjSMkHwYqSZPtyjhnwqV2M167rbGARRuh/V8Zq5mq+Y4zTSnGiAsSybxEB5ES4OwX8MkZnvkeLnrueVANmZXKLfApwkoPuCSmS+Q6wja3i307NDgqa2GVn3SaFAVejL/9I6YT6YDtZvlJJMr97JnLhSmsGF5qzWLw2wkme4Kedt/W9ncHI2kycUaL4g1XEtE6rrD5dxnMtp1AIqSMTtxlksG3Gg5B2l6QbNHUfY1oRBXrceEoKdXGFsjHu6OhOebt0LxvCrMWH1BfO5qzAziiPU3Tb1lFwC4iCPzJvx47iF8TCWoI4VIkfOoozMhIHWqYR+lHzWoiUN/S/nt76rqLSNhyh5IYECrvE8Hz2SbEMUlw9+lOJa9t7ETnO8Q8hbwuyBUvFQJwGJ9pvzldruC5jllj3PKHQB4qlWqNjkRsQ=" # defines SONAR_TOKEN=be19a915b19219daad6433fe7a8af1819bbd5781
@@ -14,4 +17,5 @@ script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
   - mono ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
     # other script steps might be done before running the actual SonarQube analysis
+  - jdk_switcher use oraclejdk8
   - sonar-scanner -Dsonar.login=$SONAR_TOKEN
