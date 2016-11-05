@@ -1,7 +1,7 @@
 language: csharp
 solution: MyHostsEdit.sln
 sudo: required
-addons:
+#addons:
 #  sonarqube: true
 #  code_climate:
 #    repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
@@ -14,8 +14,8 @@ addons:
       name: "mitoskalandiel/HostsEdit"
       description: "Build submitted via Travis CI"
     notification_email: mitoskalandiel@gmail.com
-    #build_command_prepend: "msbuild /t:Clean"
-    #build_command:   "msbuild /t:Rebuild"
+    build_command_prepend: "xbuild /p:Configuration=Release /t:Clean MyHostsEdit.sln"
+    build_command:   "xbuild /p:Configuration=Release /t:Rebuild MyHostsEdit.sln"
     branch_pattern: master
 env:
   global:
