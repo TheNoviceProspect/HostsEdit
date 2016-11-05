@@ -4,6 +4,20 @@ sudo: required
 install:
   - nuget restore MyHostsEdit.sln
   - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
+  - nuget install coveralls.net -Version 0.7.0 -OutputDirectory coveralls.net
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
-  - mono ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
+  - mono --debug --profile=monocov:outfile=monocovCoverage.cov,+MyHostsEdit ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
+  - monocov --export-xml=monocovCoverage monocovCoverage.cov
+  - cat monocovCoverage.cov
+  - ls monocovCoverage
+  - REPO_COMMIT_AUTHOR=$(git show -s --pretty=format:"%cn")
+  - REPO_COMMIT_AUTHOR_EMAIL=$(git show -s --pretty=format:"%ce")
+  - REPO_COMMIT_MESSAGE=$(git show -s --pretty=format:"%s")
+  - echo $TRAVIS_COMMIT
+  - echo $TRAVIS_BRANCH
+  - echo $REPO_COMMIT_AUTHOR
+  - echo $REPO_COMMIT_AUTHOR_EMAIL
+  - echo $REPO_COMMIT_MESSAGE
+  - echo $TRAVIS_JOB_ID
+  - mono ./coveralls.net/coveralls.net.0.7.0/tools/csmacnz.Coveralls.exe --monocov -i ./monocovCoverage --repoToken $COVERALLS_REPO_TOKEN --commitId $TRAVIS_COMMIT --commitBranch $TRAVIS_BRANCH --commitAuthor "$REPO_COMMIT_AUTHOR" --commitEmail "$REPO_COMMIT_AUTHOR_EMAIL" --commitMessage "$REPO_COMMIT_MESSAGE" --jobId $TRAVIS_JOB_ID  --serviceName travis-ci  --useRelativePaths
