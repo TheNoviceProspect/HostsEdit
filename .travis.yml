@@ -17,7 +17,7 @@ install:
   - ./configure
   - make
   - sudo make install
-  - cd ~
+  - cd /home/travis/build/mitoskalandiel/HostsEdit
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
   - export LD_LIBRARY_PATH=/usr/local/lib
