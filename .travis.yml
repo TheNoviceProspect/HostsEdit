@@ -1,6 +1,7 @@
 language: csharp
 solution: MyHostsEdit.sln
 sudo: required
+jdk: oraclejdk8
 addons:
   sonarqube: true
 env:
