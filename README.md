@@ -1,6 +1,6 @@
 Build-Status: [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=master)](https://travis-ci.org/mitoskalandiel/HostsEdit)
 ---
-Code Coverage: [![Coverage Status](https://coveralls.io/repos/github/mitoskalandiel/HostsEdit/badge.svg?branch=master)](https://coveralls.io/github/mitoskalandiel/HostsEdit?branch=master)
+Code Coverage: (soon to come)
 ---
 # HostsEdit
 This app will (in future) allow to edit the windows hosts file without fuss.
