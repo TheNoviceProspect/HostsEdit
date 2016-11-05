@@ -1,4 +1,4 @@
-# HostsEdit [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=master)](https://travis-ci.org/mitoskalandiel/HostsEdit)
+# HostsEdit [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=master)](https://travis-ci.org/mitoskalandiel/HostsEdit) -- [![Code Climate](https://codeclimate.com/github/mitoskalandiel/HostsEdit/badges/gpa.svg)](https://codeclimate.com/github/mitoskalandiel/HostsEdit)
 This app will (in future) allow to edit the windows hosts file without fuss.
 ## Description
 Simply start the app open the hosts file (via File -> Open) and then edit your entries.
