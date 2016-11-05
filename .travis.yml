@@ -1,34 +1,9 @@
 language: csharp
 solution: MyHostsEdit.sln
 sudo: required
-#addons:
-#  sonarqube: true
-#  code_climate:
-#    repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
-#  apt:
-#    packages:
-#      - oracle-java8-installer
-addons:
-  coverity_scan:
-    project:
-      name: "mitoskalandiel/HostsEdit"
-      description: "Build submitted via Travis CI"
-    notification_email: mitoskalandiel@gmail.com
-    build_command_prepend: "xbuild /p:Configuration=Release /t:Clean MyHostsEdit.sln"
-    build_command:   "xbuild /p:Configuration=Release /t:Rebuild MyHostsEdit.sln"
-    branch_pattern: master
-env:
-  global:
-#    - secure: "Wq1yeBb1VwRWH/TV0yrl1iVZSJlZ0D111WSw0+v7swAFabIWA6LUak6ovaPoO476Gnk4T5NCiAyu1EbmkW812+hBgbKzKkC/advtfTfdiXosRITgrLE1/rgFneyPgqQ8fqLFn9eXjIMyiueQ9253ukZ6lo4o0k6lDmuOEJZC2FXC7AvvJazFkfwACdlGhpIGSy0v247Mxr03UVrDZI/Dh9VDG3hgAdq99A/sjr+r3xq/QPCLQr8IkZOGuCGvSxje+JjSMkHwYqSZPtyjhnwqV2M167rbGARRuh/V8Zq5mq+Y4zTSnGiAsSybxEB5ES4OwX8MkZnvkeLnrueVANmZXKLfApwkoPuCSmS+Q6wja3i307NDgqa2GVn3SaFAVejL/9I6YT6YDtZvlJJMr97JnLhSmsGF5qzWLw2wkme4Kedt/W9ncHI2kycUaL4g1XEtE6rrD5dxnMtp1AIqSMTtxlksG3Gg5B2l6QbNHUfY1oRBXrceEoKdXGFsjHu6OhOebt0LxvCrMWH1BfO5qzAziiPU3Tb1lFwC4iCPzJvx47iF8TCWoI4VIkfOoozMhIHWqYR+lHzWoiUN/S/nt76rqLSNhyh5IYECrvE8Hz2SbEMUlw9+lOJa9t7ETnO8Q8hbwuyBUvFQJwGJ9pvzldruC5jllj3PKHQB4qlWqNjkRsQ=" # defines SONAR_TOKEN=be19a915b19219daad6433fe7a8af1819bbd5781
-    - secure: "YAazTb3xRzzsaYoRAnKfdM5DQKrXQibVwadRVepWmMYEpYB4F/+aMg500/QH5r8KxOlzUzn34UO05qGUfZhxIL4hbbdC6QVurw24IKnbe8s7csIFmuKrU9ZOTh84a+Np75CWCHU2mCn9nP/eK6Yl8v6RDmOBrwFTGiWQwUalhVDFEVStlAI22f0uCm3uMz4u6DCqYDWwkK6FiyHHbmFoOwW2E7EUoguuWQ/d7YCpQbZPF4b1igDynzYhL8w2Iu/X5gq4HeEo4FiL5w7i+uU3FrPODFEuYe8MANiUOeZILcdI3sxSH4+UhbOFqIgMg+JdCmDc7zm94gs1K1/x0zJBke5IKVevYeerWLCh4/BFRhn1n88cpoGDzXiwbcKy0gL9M4RlihVYWWgxpshBex4jtrAT9Od1nzjSgn7JbwclDkVatIVI49ovV8RqitC1gnsjSqsbu3C7n9IUx0m7VLnNdZkh2kgU0oFLaFGmuWCisJijjigfysDOrER2ADsoc2Du73NOy3xswrbKvQjGlNriOVXbHclzg0GWR/ZaVJ2TnOuoR1Xi9ZTMCGnjEqafUsw0ea5PVoiokyj8AlaI+iRZ1TExP/S1L5wAwGIMTHW8gp0dzkjKOArRp6GgJ1PeBTxxG/xuiTtD/NmNXQr77Ct8szbl7knZI/qTSKAGTRW7SxQ="
-before_install:
-    - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 install:
   - nuget restore MyHostsEdit.sln
   - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nunit-runner
 script:
   - xbuild /p:Configuration=Release MyHostsEdit.sln
   - mono ./nunit-runner/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
-    # other script steps might be done before running the actual SonarQube analysis
-#  - jdk_switcher use oraclejdk8
-#  - sonar-scanner -Dsonar.login=$SONAR_TOKEN
