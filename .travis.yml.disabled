@@ -1,0 +1,20 @@
+language: csharp
+solution: MyHostsEdit.sln
+sudo: required
+install:
+  - nuget restore MyHostsEdit.sln
+  - nuget install NUnit.Runners -Version 3.5.0 -OutputDirectory nuget-apps
+  - nuget install OpenCover -Version 4.6.519 -OutputDirectory nuget-apps
+script:
+  - xbuild /p:Configuration=Release MyHostsEdit.sln
+  - mono ./nuget-apps/NUnit.ConsoleRunner.3.5.0/tools/nunit3-console.exe ./JokerApiTests/bin/Release/JokerApiTests.dll
+after_test: 
+  - mono ./nuget-apps/OpenCover.4.6.519/tools/OpenCover.Console.exe -register:user -target:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\MSTest.exe" -targetargs:"/noresults /noisolation /testcontainer:"".\MyProject Unit Tests\bin\Debug\MyProject.UnitTests.dll" -filter:"+[MyProject]*  -[MyProject]MyProject.Properties.*" -excludebyattribute:*.ExcludeFromCodeCoverage* -hideskipped:All -output:.\MyProject_coverage.xml
+  - "SET PATH=C:\\Python34;C:\\Python34\\Scripts;%PATH%"
+  - pip install codecov
+  - codecov -f "MyProject_coverage.xml"
+  
+  
+  
+  
+  
