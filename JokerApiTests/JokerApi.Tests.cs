@@ -4,34 +4,34 @@ using NUnit.Framework;
 
 namespace JokerApi.Tests
 {
-    [TestFixture, Category("BasicTests")]
+    [TestFixture]
     public class JokerApiTestFixture
     {
         int a = 10;
         int b = 2;
         
-        [Test, Category("Math")]
+        [Test]
         public void AddTest()
         {
             JokerHelper myTest = new JokerApi.JokerHelper();
             int result = myTest.AddNums(a,b);
             Assert.AreEqual(result,12);
         }
-        [Test, Category("Math")]]
+        [Test]
         public void SubTest()
         {
             JokerHelper myTest = new JokerApi.JokerHelper();
             int result = myTest.SubNums(a, b);
             Assert.AreEqual(result, 8);
         }
-        [Test, Category("Math")]]
+        [Test]
         public void MulTest()
         {
             JokerHelper myTest = new JokerApi.JokerHelper();
             int result = myTest.MulNums(a, b);
             Assert.AreEqual(result, 20);
         }
-        [Test, Category("Math")]
+        [Test]
         public void DivTest()
         {
             JokerHelper myTest = new JokerApi.JokerHelper();
