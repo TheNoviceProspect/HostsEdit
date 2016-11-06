@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace JokerApi.Tests
 {
     [TestFixture]
-    public class JokerApiTests
+    public class JokerApiTestFixture
     {
         int a = 10;
         int b = 2;

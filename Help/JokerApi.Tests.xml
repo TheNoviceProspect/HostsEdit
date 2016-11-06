@@ -1,64 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <doc>
   <assembly>
-    <name>JokerApiTests</name>
+    <name>JokerApi.Tests</name>
   </assembly>
   <members>
-    <member name="T:JokerApi.Tests.JokerApiTests">
+    <member name="T:JokerApi.Tests.JokerApiTestFixture">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>T:JokerApi.Tests.JokerApiTests</parameter>
+            <parameter>T:JokerApi.Tests.JokerApiTestFixture</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:JokerApi.Tests.JokerApiTests.#ctor">
+    <member name="M:JokerApi.Tests.JokerApiTestFixture.#ctor">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
-            <parameter>JokerApi.Tests.JokerApiTests</parameter>
+            <parameter>JokerApi.Tests.JokerApiTestFixture</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:JokerApi.Tests.JokerApiTests.AddTest">
+    <member name="M:JokerApi.Tests.JokerApiTestFixture.AddTest">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:JokerApi.Tests.JokerApiTests.AddTest</parameter>
+            <parameter>M:JokerApi.Tests.JokerApiTestFixture.AddTest</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:JokerApi.Tests.JokerApiTests.DivTest">
+    <member name="M:JokerApi.Tests.JokerApiTestFixture.DivTest">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:JokerApi.Tests.JokerApiTests.DivTest</parameter>
+            <parameter>M:JokerApi.Tests.JokerApiTestFixture.DivTest</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:JokerApi.Tests.JokerApiTests.MulTest">
+    <member name="M:JokerApi.Tests.JokerApiTestFixture.MulTest">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:JokerApi.Tests.JokerApiTests.MulTest</parameter>
+            <parameter>M:JokerApi.Tests.JokerApiTestFixture.MulTest</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:JokerApi.Tests.JokerApiTests.SubTest">
+    <member name="M:JokerApi.Tests.JokerApiTestFixture.SubTest">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>M:JokerApi.Tests.JokerApiTests.SubTest</parameter>
+            <parameter>M:JokerApi.Tests.JokerApiTestFixture.SubTest</parameter>
           </include>
         </markup>
       </summary>
