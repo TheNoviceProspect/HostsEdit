@@ -4,10 +4,15 @@ assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
-  assembly_file_version: '{version}'
+  assembly_file_version: $(appveyor_build_version)
   assembly_informational_version: '{version}'
+nuget:
+  project_feed: true
 build:
   project: MyHostsEdit.sln
-  verbosity: detailed
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  verbosity: normal
 test:
-  assemblies: '**/*Tests.dll'
+  assemblies: '**/*.Tests.dll'
