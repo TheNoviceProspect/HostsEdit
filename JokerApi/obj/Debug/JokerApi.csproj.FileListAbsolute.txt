@@ -26,5 +26,6 @@ C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Debug\JokerApi.dll
 C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Debug\JokerApi.pdb
 C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Debug\JokerApi.dll.CodeAnalysisLog.xml
 C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Debug\JokerApi.dll.lastcodeanalysissucceeded
+C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Debug\JokerApi.csprojResolveAssemblyReference.cache
 C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Debug\JokerApi.dll
 C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Debug\JokerApi.pdb
