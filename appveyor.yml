@@ -9,3 +9,5 @@ assembly_info:
 build:
   project: MyHostsEdit.sln
   verbosity: detailed
+test:
+  assemblies: '**/*Tests.dll'
