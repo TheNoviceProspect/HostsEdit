@@ -1,5 +1,0 @@
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Release\JokerApi.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\bin\Release\JokerApi.pdb
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.csprojResolveAssemblyReference.cache
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.dll
-C:\Users\smzb\Source\Repos\HostsEdit\JokerApi\obj\Release\JokerApi.pdb
