@@ -1,5 +1,7 @@
 version: 1.0.{build}
-configuration: Release
+configuration:
+- Release
+- Appveyor
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -8,9 +10,19 @@ assembly_info:
   assembly_informational_version: '{version}'
 nuget:
   project_feed: true
+before_build:
+- cmd: set PATH=C:\Tools\NUnit3\bin;%PATH%
 build:
   project: MyHostsEdit.sln
   publish_nuget: true
   publish_nuget_symbols: true
   include_nuget_references: true
-  verbosity: minimal
+  parallel: true
+  verbosity: normal
+deploy:
+- provider: GitHub
+  auth_token:
+    secure: iJqdauEKlmmdc8MW7lZrGwpE9xbLCLKqJdhhJSt0tyquEAJx9hvxzjhk7O0kShOU
+  artifact: '*.exe'
+  draft: true
+  prerelease: true
