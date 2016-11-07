@@ -6,11 +6,25 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.vcxproj.filters
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
 # Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio 2015 cache/options directory
+.vs/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -32,8 +46,8 @@ bld/
 [Bb]uild[Ll]og.*
 
 # NUNIT
-*.VisualState.xml
-TestResult.xml
+#*.VisualState.xml
+#TestResult.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -241,3 +255,7 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 *.patch
+bin/Release/*
+bin/Debug/*
+obj/Release/*
+obj/Debug/*
