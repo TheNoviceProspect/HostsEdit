@@ -7,3 +7,11 @@ sudo: required
 #  apt:
 #    packages:
 #      - oracle-java8-installer
+deploy:
+  provider: releases
+  api_key: "31dd90fa02204bb499ef45d8a3b505567b5aac53 "
+  file: "*SNAPSHOT.jar"
+  skip_cleanup: true
+  overwrite: true
+  on:
+    tags: true
