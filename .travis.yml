@@ -2,8 +2,8 @@ language: java
 jdk:
   - oraclejdk8
 #  - oraclejdk7
-sudo: false
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
+sudo: required
+#addons:
+#  apt:
+#    packages:
+#      - oracle-java8-installer

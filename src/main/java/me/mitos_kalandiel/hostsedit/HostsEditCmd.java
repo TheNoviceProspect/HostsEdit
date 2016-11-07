@@ -17,4 +17,12 @@ package me.mitos_kalandiel.hostsedit;
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 public class HostsEditCmd {
+
+    String appTitle = "Some Text";
+    public HostsEditCmd() {
+    }
+
+    protected static void main() {
+        //do something here
+    }
 }

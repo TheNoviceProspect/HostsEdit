@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_hostsedit" default="compile.module.hostsedit">
+  <dirname property="module.hostsedit.basedir" file="${ant.file.module_hostsedit}"/>
+  
+  <property name="module.jdk.home.hostsedit" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.hostsedit" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.hostsedit" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.hostsedit" value="-encoding UTF-8 -source 1.5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="hostsedit.output.dir" value="${module.hostsedit.basedir}/target/classes"/>
+  <property name="hostsedit.testoutput.dir" value="${module.hostsedit.basedir}/target/test-classes"/>
+  
+  <path id="hostsedit.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="hostsedit.module.production.classpath">
+    <path refid="${module.jdk.classpath.hostsedit}"/>
+    <pathelement location="${basedir}/../JS-java-libs"/>
+  </path>
+  
+  <path id="hostsedit.runtime.production.module.classpath">
+    <pathelement location="${hostsedit.output.dir}"/>
+    <pathelement location="${basedir}/../JS-java-libs"/>
+  </path>
+  
+  <path id="hostsedit.module.classpath">
+    <path refid="${module.jdk.classpath.hostsedit}"/>
+    <pathelement location="${hostsedit.output.dir}"/>
+    <pathelement location="${basedir}/../JS-java-libs"/>
+  </path>
+  
+  <path id="hostsedit.runtime.module.classpath">
+    <pathelement location="${hostsedit.testoutput.dir}"/>
+    <pathelement location="${hostsedit.output.dir}"/>
+    <pathelement location="${basedir}/../JS-java-libs"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.hostsedit">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.hostsedit">
+    <patternset refid="excluded.from.module.hostsedit"/>
+  </patternset>
+  
+  <path id="hostsedit.module.sourcepath">
+    <dirset dir="${module.hostsedit.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="hostsedit.module.test.sourcepath">
+    <dirset dir="${module.hostsedit.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.hostsedit" depends="compile.module.hostsedit.production,compile.module.hostsedit.tests" description="Compile module HostsEdit"/>
+  
+  <target name="compile.module.hostsedit.production" depends="register.custom.compilers" description="Compile module HostsEdit; production classes">
+    <mkdir dir="${hostsedit.output.dir}"/>
+    <javac2 destdir="${hostsedit.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hostsedit}/javac">
+      <compilerarg line="${compiler.args.hostsedit}"/>
+      <bootclasspath refid="hostsedit.module.bootclasspath"/>
+      <classpath refid="hostsedit.module.production.classpath"/>
+      <src refid="hostsedit.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hostsedit"/>
+    </javac2>
+    
+    <copy todir="${hostsedit.output.dir}">
+      <fileset dir="${module.hostsedit.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.hostsedit.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.hostsedit.tests" depends="register.custom.compilers,compile.module.hostsedit.production" description="compile module HostsEdit; test classes" unless="skip.tests">
+    <mkdir dir="${hostsedit.testoutput.dir}"/>
+    <javac2 destdir="${hostsedit.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.hostsedit}/javac">
+      <compilerarg line="${compiler.args.hostsedit}"/>
+      <bootclasspath refid="hostsedit.module.bootclasspath"/>
+      <classpath refid="hostsedit.module.classpath"/>
+      <src refid="hostsedit.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.hostsedit"/>
+    </javac2>
+    
+    <copy todir="${hostsedit.testoutput.dir}">
+      <fileset dir="${module.hostsedit.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.hostsedit" description="cleanup module">
+    <delete dir="${hostsedit.output.dir}"/>
+    <delete dir="${hostsedit.testoutput.dir}"/>
+  </target>
+</project>
