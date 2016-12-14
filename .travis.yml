@@ -13,8 +13,7 @@ after_success:
 - git config --global user.name "Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git
-  --tags
+- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git --tags
 deploy:
   provider: releases
   api_key:
