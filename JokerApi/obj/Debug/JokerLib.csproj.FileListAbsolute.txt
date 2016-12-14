@@ -1,7 +1,0 @@
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerLib.XML
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerLib.dll
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerLib.pdb
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerLib.dll.CodeAnalysisLog.xml
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\bin\Debug\JokerLib.dll.lastcodeanalysissucceeded
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\obj\Debug\JokerLib.dll
-C:\Users\smzb.HOME\Source\Workspaces\MyHostsEdit\MyHostsEdit\JokerLib\obj\Debug\JokerLib.pdb
