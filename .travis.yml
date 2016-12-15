@@ -3,6 +3,8 @@ install: true
 matrix:
   include:
   - jdk: oraclejdk8
+before_install:
+- openssl aes-256-cbc -K $encrypted_8b1807510560_key -iv $encrypted_8b1807510560_iv -in .coveralls.yml.enc -out .coveralls.yml -d
 script: mvn clean verify install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
 env:
   global:
@@ -13,7 +15,8 @@ after_success:
 - git config --global user.name "Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git --tags
+- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git
+  --tags
 deploy:
   provider: releases
   skip_cleanup: true
