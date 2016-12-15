@@ -16,6 +16,7 @@ after_success:
 - git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git --tags
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: FX3x9+hM23Uc4qdrgT3a+m8vo+ZQkNI78PJ141SXWUZZzViOkbkwjyILt/0CLSAUT4yk7r5HMMFur9VVDZZwThr4ukKu9j8+qIAt5t8qpG/e6dZp7A7Rt9k4OlUdEapISCsP1wSspJ7aDi1zPkf0DF88qirlIEJmWPf4PW80PzX7RSZoxD7MoG8sGPt5eYeBstCz46DjXKdX3YwHsKIhdZOTPwSblLMgT7QF7iFdIbxXx7f6wggPn+uFjSiKqUx+aHa2Rw/7RZDOH3nMztj+SLBaqVr2QVbpkW9Z2yRNb86Rv1AZMnAu/0oIcgbeMiHeJDtaPQJzTFvJV0OXO/X486gXHDfzBr59infC/54VOt6siJpKu9dYTBP0TvCTtyIaD69QjStsBQ32FAJkgx7kqzL1G3P2tVTHcYESX4P78TNMn00BxsXapRS+d+9T61ivdUtnSm9bRWOjOPIyZ+m1IPcXDNcL4f9NiLx1K67FUb8PY91+DYO7eZC8owJxpNSLGC5h8xpz5Ms34fYYr2EdnFPhn2z09pemcV28sjU8+9hwflsJ0hjaFnMxH4/S0Z1dHbpU5pBxL9O2f7DJcU6P2yfBUIt53L3pkmnqAjOrufqaN1IEoHENd3hFjSwp4muq6CUFCPJ3aj1drJarkwrl2vbES4Fni/w7kYWGBtwyvxI=
   file:
