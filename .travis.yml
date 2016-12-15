@@ -4,11 +4,12 @@ matrix:
   include:
   - jdk: oraclejdk8
 before_install:
-- openssl aes-256-cbc -K $encrypted_8b1807510560_key -iv $encrypted_8b1807510560_iv -in .coveralls.yml.enc -out .coveralls.yml -d
+- openssl aes-256-cbc -K $encrypted_8b1807510560_key -iv $encrypted_8b1807510560_iv
+  -in .coveralls.yml.enc -out .coveralls.yml -d
 script: mvn clean verify install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
 env:
   global:
-    secure: XpArBRq0bKup5UYe7cOLqBSK4iXkG6p5YMNNBVIWjxHXiRuBxdFu4eXCu03scIzoe/GyXD65grSsZevAekK0lJZAd0/T62n0hfuWxw/NWHD+lbJRuGxNbwcqTvihLs8Np4Cicj7S+aWMZLdUc7eTrvx/nrs13PGUvHwn0eBo/GPrGYD3Jh/zaDG9c4w920tkq8u9telyl5sTF4ElrY2aneQbqRxs7zLLnDtLc+wdvNtfeAdGVD74mRzUSsWP+FFGea4nqA1A7qaXKSvIpdo3ympxZNCTBu3jMAGPSDk7CRnJOZYlLcNqqpeWdsCvPRst4Y57dPhstzv5KicDMuicZHUJddeXCFqtxYxvhj1rvsAud8L79KYDEC+Dux4qvW2uu5B79JwROTJlHdcC7FckikOHcp8KgHXJuwQbtboPemZ22dZvgK+TJKcp/tvvgGScZkJ9jPBwhRjFllblz6X2nRx8UNcHtrIwIP5PnYI1t95yGYlImVuzdv6uWW8uQxCvePCTBPHsBLnRvsT03MBAnbk1I9GiqHZntVWnxQcbcSXzl8gTpgEhSs/PiOimRyaP/WG7+rEOPXZ/n/VdfwvoN4a4p/KVb2mo3WbiLNxtrHYjJoN3+4V/3/nRRI4c6CvS9yHnMqQQ99ZAlKSnMVUpW30y3y6WL7I8tTw3aNr5+38=
+    secure: ga+p8gfqtcZDS8Atb0mYTEveAo9ssAgXzv5wNrsnUGrZVknB/Dqt0KIFOKvixdxOxPSbosYGqdszyaQ/638fk4RnBirtrEABPwFuSQAbmFSZw37jmstUDsBWjrSBojTpQ3H9qTHPEoIAVsVH7PlfSHPID1tXw5Dyxw/bvVL7uXkpPDQuWvlo8dd5gAm6zLu3DzpqPgC14p/sjsLNAwXB4fWM9AXdBb+nkkyqnWNSUN914Ko6I6g5psYyR2zEbuIIeblfaSQByuBdjT6TaCAhLlssNQJWDJEB0JDfCo25ssVqHdYSQK6444DtOppI2Ogn/IvCXTrFjFWciGnKCXHvVL6RlVU1v/mIPkSzjcP7JVVsKNWMdXbjLt507bBI3N9EM5yeHrvlBjP3LCYmEUiUOfCgetA0gSLQ62a/aIgz5bIVWfur601X5lhuo/qXhbdMxEf4+L9LtnNruRAUpJzZMOLgaiS+VRql7Oh4MPIIn/HV0FlrubP1+DmgzO2fcvIgNStuMbRgsd+DBDA3FX4UBhmIZMndAp+RZ2AFXt7LuORZ5USd7IQfhRImgjuFJsn6xD3lt3kNkosFt/onHB3HDwkJACI88JyHS3ItxuY74t4Qhu4lghfVhujFTmSlCLfAITpiz+VOTncnXzSe6UX+YF5HXe9EcI1rv30cZPM6PUs=
 after_success:
 - mvn org.eluder.coveralls:coveralls-maven-plugin:report
 - git config --global user.email "builds@travis-ci.com"
