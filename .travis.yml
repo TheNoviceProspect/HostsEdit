@@ -32,6 +32,7 @@ branches:
   except:
   - "/^*-v[0-9]/"
 addons:
+  srcclr: true
   code_climate:
     repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
 cache:
