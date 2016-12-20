@@ -1,4 +1,3 @@
-/.coveralls.yml
-target/
-dist/
-compiled/
+_site
+.sass-cache
+.jekyll-metadata
