@@ -1,11 +1,17 @@
-Build-Status: [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=master)](https://travis-ci.org/mitoskalandiel/HostsEdit)
-
-AppVeyor-CI: [![Build status](https://ci.appveyor.com/api/projects/status/870bwd77fhl8kfxy/branch/master?svg=true)](https://ci.appveyor.com/project/mitoskalandiel/hostsedit/branch/master)
----
-Code Coverage: (soon to come)
----
 # HostsEdit
 This app will (in future) allow to edit the windows hosts file without fuss.
+
+|        Git Branch        	|                                                                                  (dev)                                                                                 	|                                                                                   (master)                                                                                   	|                                                                                  (beta)                                                                                  	|                                                                                   (stable)                                                                                   	|
+|:------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+| Travis CI : Build Status 	|                    [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=dev)](https://travis-ci.org/mitoskalandiel/HostsEdit)                    	|                      [![BuildStatus](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=master)](https://travis-ci.org/mitoskalandiel/HostsEdit)                      	|                     [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=beta)](https://travis-ci.org/mitoskalandiel/HostsEdit)                    	|                      [![Build Status](https://travis-ci.org/mitoskalandiel/HostsEdit.svg?branch=stable)](https://travis-ci.org/mitoskalandiel/HostsEdit)                     	|
+|    Coveralls Coverage    	| [![Coverage Status](https://coveralls.io/repos/github/mitoskalandiel/HostsEdit/badge.svg?branch=dev)](https://coveralls.io/github/mitoskalandiel/HostsEdit?branch=dev) 	| [![Coverage Status](https://coveralls.io/repos/github/mitoskalandiel/HostsEdit/badge.svg?branch=master)](https://coveralls.io/github/mitoskalandiel/HostsEdit?branch=master) 	| [![Coverage Status](https://coveralls.io/repos/github/mitoskalandiel/HostsEdit/badge.svg?branch=beta)](https://coveralls.io/github/mitoskalandiel/HostsEdit?branch=beta) 	| [![Coverage Status](https://coveralls.io/repos/github/mitoskalandiel/HostsEdit/badge.svg?branch=stable)](https://coveralls.io/github/mitoskalandiel/HostsEdit?branch=stable) 	|
+
+|                            	|                                                               Automated Code Review and Code Quality                                                              	|
+|:--------------------------:	|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
+|        Code Climate        	|         [![Code Climate](https://codeclimate.com/github/mitoskalandiel/HostsEdit/badges/gpa.svg)](https://codeclimate.com/github/mitoskalandiel/HostsEdit)        	|
+| Code Climate Test Coverage 	| [![Test Coverage](https://codeclimate.com/github/mitoskalandiel/HostsEdit/badges/coverage.svg)](https://codeclimate.com/github/mitoskalandiel/HostsEdit/coverage) 	|
+|     Code Climate Issues    	|     [![Issue Count](https://codeclimate.com/github/mitoskalandiel/HostsEdit/badges/issue_count.svg)](https://codeclimate.com/github/mitoskalandiel/HostsEdit)     	|
+
 ## Description
 Simply start the app open the hosts file (via File -> Open) and then edit your entries.
 ## Some more text
