@@ -4,7 +4,7 @@
 
     <groupId>me.mitoskalandiel</groupId>
     <artifactId>HostsEdit</artifactId>
-    <version>v1.0</version>
+    <version>v1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>HostsEdit</name>
@@ -123,5 +123,15 @@
             </plugin>
         </plugins>
     </build>
-
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <configuration>
+                    <configLocation>config/sun_checks.xml</configLocation>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
