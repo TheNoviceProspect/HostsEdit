@@ -4,8 +4,7 @@ matrix:
   include:
   - jdk: oraclejdk8
 before_install:
-- openssl aes-256-cbc -K $encrypted_8b1807510560_key -iv $encrypted_8b1807510560_iv
-  -in .coveralls.yml.enc -out .coveralls.yml -d
+- openssl aes-256-cbc -K $encrypted_8b1807510560_key -iv $encrypted_8b1807510560_iv -in .coveralls.yml.enc -out .coveralls.yml -d
 script: mvn clean verify install -DskipTests=false -Dmaven.javadoc.skip=true -B -V
 env:
   global:
@@ -36,10 +35,10 @@ addons:
     repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
   sonarqube:
     token:
-      secure: "lJ6DRvWNFBS5rw2/2YoTTVJjhsGZxiqDorUCSHsGy8g885RLY4s0H3cre8PWACuk6PqVxIAJ2kQvIYvl66A/dD18xhCc1PPYbcQqGUTA3kpc50ZcdpeNWJABtPpM18bPxcX0Qu3K3VSVJt7Er6Zz9jrLYrHjOwxUe4xRCiaTgoV1U9bp2dk7hDYv4zTAQGg5pU+9YvXzqcN1VVw6wed0Qyj5MSiZzacESAp8Blh4rvE1euPfX3fHRc9I3OrP5rPVOwFUhjr0I5WwbQOIYWx7usVqQr/2vYm3fAdL000VsCVjhSXlwZ6dhdZ8gW4CTFauS90yPri9MNYXBRk1/J+NggZbMZmhSx2t1aLBoN8F9kErqlID19FEBwYxX7SoQvIDHeab0I8rHvv+HzJKTiBMJoqOyg59dWi3FiUwz17tdXkA31CId4dNReglchcqMUmSevsix73U4UypcQFFo3n9IFRSH8kV4CORaevKhYqeTFloFwmHwCHiLcxJHaIb7hFDUtPk2li7sXmo5TJQKrAfcQRW1jqR/Gt/Dck56ZHUFWJzC6H+yAYICzc3A5UEJSWUrUw3v7FKR62/QGjInW59yUkvdD/THGCeyOATWlnLMayE1de46OcqGb+iAcbkyAi79XLEKPf7QGR3jMMnP3saDqYkLvB5GOKV1/tAVNyAn3Q=" # encrypted value of your token
+      secure: lJ6DRvWNFBS5rw2/2YoTTVJjhsGZxiqDorUCSHsGy8g885RLY4s0H3cre8PWACuk6PqVxIAJ2kQvIYvl66A/dD18xhCc1PPYbcQqGUTA3kpc50ZcdpeNWJABtPpM18bPxcX0Qu3K3VSVJt7Er6Zz9jrLYrHjOwxUe4xRCiaTgoV1U9bp2dk7hDYv4zTAQGg5pU+9YvXzqcN1VVw6wed0Qyj5MSiZzacESAp8Blh4rvE1euPfX3fHRc9I3OrP5rPVOwFUhjr0I5WwbQOIYWx7usVqQr/2vYm3fAdL000VsCVjhSXlwZ6dhdZ8gW4CTFauS90yPri9MNYXBRk1/J+NggZbMZmhSx2t1aLBoN8F9kErqlID19FEBwYxX7SoQvIDHeab0I8rHvv+HzJKTiBMJoqOyg59dWi3FiUwz17tdXkA31CId4dNReglchcqMUmSevsix73U4UypcQFFo3n9IFRSH8kV4CORaevKhYqeTFloFwmHwCHiLcxJHaIb7hFDUtPk2li7sXmo5TJQKrAfcQRW1jqR/Gt/Dck56ZHUFWJzC6H+yAYICzc3A5UEJSWUrUw3v7FKR62/QGjInW59yUkvdD/THGCeyOATWlnLMayE1de46OcqGb+iAcbkyAi79XLEKPf7QGR3jMMnP3saDqYkLvB5GOKV1/tAVNyAn3Q=
     branches:
     - master
-    - maintenance
+    - dev
 cache:
   directories:
   - "$HOME/.m2"
