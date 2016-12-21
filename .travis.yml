@@ -11,13 +11,12 @@ env:
   global:
     secure: ga+p8gfqtcZDS8Atb0mYTEveAo9ssAgXzv5wNrsnUGrZVknB/Dqt0KIFOKvixdxOxPSbosYGqdszyaQ/638fk4RnBirtrEABPwFuSQAbmFSZw37jmstUDsBWjrSBojTpQ3H9qTHPEoIAVsVH7PlfSHPID1tXw5Dyxw/bvVL7uXkpPDQuWvlo8dd5gAm6zLu3DzpqPgC14p/sjsLNAwXB4fWM9AXdBb+nkkyqnWNSUN914Ko6I6g5psYyR2zEbuIIeblfaSQByuBdjT6TaCAhLlssNQJWDJEB0JDfCo25ssVqHdYSQK6444DtOppI2Ogn/IvCXTrFjFWciGnKCXHvVL6RlVU1v/mIPkSzjcP7JVVsKNWMdXbjLt507bBI3N9EM5yeHrvlBjP3LCYmEUiUOfCgetA0gSLQ62a/aIgz5bIVWfur601X5lhuo/qXhbdMxEf4+L9LtnNruRAUpJzZMOLgaiS+VRql7Oh4MPIIn/HV0FlrubP1+DmgzO2fcvIgNStuMbRgsd+DBDA3FX4UBhmIZMndAp+RZ2AFXt7LuORZ5USd7IQfhRImgjuFJsn6xD3lt3kNkosFt/onHB3HDwkJACI88JyHS3ItxuY74t4Qhu4lghfVhujFTmSlCLfAITpiz+VOTncnXzSe6UX+YF5HXe9EcI1rv30cZPM6PUs=
 after_success:
-- mvn org.eluder.coveralls:coveralls-maven-plugin:report
+- mvn clean org.eluder.coveralls:coveralls-maven-plugin:report org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
 - git tag $GIT_TAG -a -m "Generated tag from TravisCI for build $TRAVIS_BUILD_NUMBER"
-- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git
-  --tags
+- git push https://${GH_TOKEN}:x-oauth-basic@github.com/mitoskalandiel/HostsEdit.git --tags
 deploy:
   provider: releases
   skip_cleanup: true
@@ -35,6 +34,12 @@ addons:
   srcclr: true
   code_climate:
     repo_token: 96557def378bdcf81aac3dd6fb1e8fb9a09b9e7990dbda41515e7cf37dec9789
+  sonarqube:
+    token:
+      secure: "lJ6DRvWNFBS5rw2/2YoTTVJjhsGZxiqDorUCSHsGy8g885RLY4s0H3cre8PWACuk6PqVxIAJ2kQvIYvl66A/dD18xhCc1PPYbcQqGUTA3kpc50ZcdpeNWJABtPpM18bPxcX0Qu3K3VSVJt7Er6Zz9jrLYrHjOwxUe4xRCiaTgoV1U9bp2dk7hDYv4zTAQGg5pU+9YvXzqcN1VVw6wed0Qyj5MSiZzacESAp8Blh4rvE1euPfX3fHRc9I3OrP5rPVOwFUhjr0I5WwbQOIYWx7usVqQr/2vYm3fAdL000VsCVjhSXlwZ6dhdZ8gW4CTFauS90yPri9MNYXBRk1/J+NggZbMZmhSx2t1aLBoN8F9kErqlID19FEBwYxX7SoQvIDHeab0I8rHvv+HzJKTiBMJoqOyg59dWi3FiUwz17tdXkA31CId4dNReglchcqMUmSevsix73U4UypcQFFo3n9IFRSH8kV4CORaevKhYqeTFloFwmHwCHiLcxJHaIb7hFDUtPk2li7sXmo5TJQKrAfcQRW1jqR/Gt/Dck56ZHUFWJzC6H+yAYICzc3A5UEJSWUrUw3v7FKR62/QGjInW59yUkvdD/THGCeyOATWlnLMayE1de46OcqGb+iAcbkyAi79XLEKPf7QGR3jMMnP3saDqYkLvB5GOKV1/tAVNyAn3Q=" # encrypted value of your token
+    branches:
+    - master
+    - maintenance
 cache:
   directories:
   - "$HOME/.m2"
