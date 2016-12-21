@@ -25,7 +25,7 @@
         <dependency>
             <groupId>com.github.mitoskalandiel</groupId>
             <artifactId>JokerLibs</artifactId>
-            <version>dev-v1.0.224</version>
+            <version>dev-v1.0.226</version>
         </dependency>
     </dependencies>
 
