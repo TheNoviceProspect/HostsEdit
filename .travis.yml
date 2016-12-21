@@ -10,7 +10,7 @@ env:
   global:
     secure: ga+p8gfqtcZDS8Atb0mYTEveAo9ssAgXzv5wNrsnUGrZVknB/Dqt0KIFOKvixdxOxPSbosYGqdszyaQ/638fk4RnBirtrEABPwFuSQAbmFSZw37jmstUDsBWjrSBojTpQ3H9qTHPEoIAVsVH7PlfSHPID1tXw5Dyxw/bvVL7uXkpPDQuWvlo8dd5gAm6zLu3DzpqPgC14p/sjsLNAwXB4fWM9AXdBb+nkkyqnWNSUN914Ko6I6g5psYyR2zEbuIIeblfaSQByuBdjT6TaCAhLlssNQJWDJEB0JDfCo25ssVqHdYSQK6444DtOppI2Ogn/IvCXTrFjFWciGnKCXHvVL6RlVU1v/mIPkSzjcP7JVVsKNWMdXbjLt507bBI3N9EM5yeHrvlBjP3LCYmEUiUOfCgetA0gSLQ62a/aIgz5bIVWfur601X5lhuo/qXhbdMxEf4+L9LtnNruRAUpJzZMOLgaiS+VRql7Oh4MPIIn/HV0FlrubP1+DmgzO2fcvIgNStuMbRgsd+DBDA3FX4UBhmIZMndAp+RZ2AFXt7LuORZ5USd7IQfhRImgjuFJsn6xD3lt3kNkosFt/onHB3HDwkJACI88JyHS3ItxuY74t4Qhu4lghfVhujFTmSlCLfAITpiz+VOTncnXzSe6UX+YF5HXe9EcI1rv30cZPM6PUs=
 after_success:
-- mvn clean org.eluder.coveralls:coveralls-maven-plugin:report org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+- mvn org.eluder.coveralls:coveralls-maven-plugin:report org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 - git config --global user.email "builds@travis-ci.com"
 - git config --global user.name "Travis CI"
 - export GIT_TAG=$TRAVIS_BRANCH-v1.0.$TRAVIS_BUILD_NUMBER
